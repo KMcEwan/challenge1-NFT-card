@@ -1,0 +1,72 @@
+
+html
+{
+    width: 1440px;
+    font-family: Outfit;
+}
+
+body
+{
+    background-color: hsl(217, 54%, 11%);
+}
+
+#flex-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#card
+{
+    background:  hsl(216, 50%, 16%);
+    width: 25vw;
+    height: 70vh;
+    border-radius: 2vw;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-image
+{
+    width: 90%;
+    
+    border-radius: 3vh;
+    margin-top: 2vh;
+}
+
+#card-text-title
+{
+    color: white;
+    font-weight: 600;
+}
+
+#card-text-info
+{
+    color: white;
+    font-weight: 300;
+}
+
+#flex-container-price-days
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#card-price
+{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+#card-days
+{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+
+
