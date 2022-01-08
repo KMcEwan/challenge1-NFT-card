@@ -15,6 +15,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
@@ -22,51 +23,135 @@ body
 #card
 {
     background:  hsl(216, 50%, 16%);
-    width: 25vw;
-    height: 70vh;
+    width: 20vw;
+    height: 68vh;
     border-radius: 2vw;
     object-fit: contain;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #main-image
 {
     width: 90%;
-    
+    height: 100%;
+    background-image: url("https://imgur.com/e8qZPeQ");
+    /* background-size: fit; */
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 3vh;
     margin-top: 2vh;
+    align-self: center;
+}
+
+#main-image:hover
+{
+    filter:blur(5px);
 }
 
 #card-text-title
 {
     color: white;
     font-weight: 600;
+    font-size: 18px;
+    width: 90%;
+    padding-left: 3vh;
+    padding-top: 3vh;
+}
+
+#card-text-title:hover
+{
+    color:  hsl(178, 100%, 50%);
 }
 
 #card-text-info
 {
     color: white;
+    font-size: 18px;
     font-weight: 300;
+    width: 90%;
+    margin-top: 3vh;
+    padding-left: 3vh;
 }
 
 #flex-container-price-days
 {
     display: flex;
     flex-direction: row;
+    margin-top: 3vh;
+    /* padding-left: 3vh; */
+    width: 100%;
+    justify-content: space-between;
 }
 
 #card-price
 {
     color: hsl(178, 100%, 50%);
     font-weight: 400;
+    padding-left: 3vh;
 }
 
 #card-days
 {
     color: hsl(0, 0%, 100%);
     font-weight: 300;
+    padding-right: 3vh;
 }
 
+#line-bar
+{
+    background-color: hsl(215, 32%, 27%);
+    width: 90%;
+    height: 0.5vh;
+    align-self: center;
+}
 
+#creator-image
+{
+    margin: 2vh;
+    margin-right: 0vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 2.5vw;    
+    height: 2.5vw;
+    align-self: center;
+}
+
+#creator-info
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* margin-top: 1vh; */
+    align-items: center;
+}
+
+#creator-name-container
+{
+    display: flex;
+    flex-direction: row;
+}
+#creator-name
+{
+    margin: 1vw;
+    margin-right: 0.5vw;
+    align-self: center;
+    color: white;
+}
+#creators-name
+{
+    color: white;
+    align-self: center;
+}
+#creators-name:hover
+{
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
