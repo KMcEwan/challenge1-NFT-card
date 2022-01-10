@@ -1,7 +1,7 @@
 
 html
 {
-    width: 1440px;
+    width: 100%;
     font-family: Outfit;
 }
 
@@ -23,25 +23,26 @@ body
 #card
 {
     background:  hsl(216, 50%, 16%);
-    width: 20vw;
-    height: 68vh;
+    width: 20%;
+    height: 70%;
     border-radius: 2vw;
     object-fit: contain;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0%;
 }
 
 #main-image
 {
     width: 90%;
-    height: 100%;
-    background-image: url("https://imgur.com/e8qZPeQ");
-    /* background-size: fit; */
+    height: 90%;
+    background-image: url("/challenge1-NFT-card/images/image-equilibrium.jpg");
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 3vh;
-    margin-top: 2vh;
+    border-radius: 2vh;
+    margin-top: 1em;
     align-self: center;
 }
 
@@ -154,4 +155,37 @@ body
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 600px) 
+{
+#card
+    {
+        background:  hsl(216, 50%, 16%);
+        width: 80%;
+        height: 70%;
+        border-radius: 2vw;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 600px)
+{
+    #card
+    {
+        background:  hsl(216, 50%, 16%);
+        width: 50%;
+        height: 70%;
+        border-radius: 2vw;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0%;
+    }
+}
 }
