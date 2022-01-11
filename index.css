@@ -37,8 +37,8 @@ body
 {
     width: 90%;
     height: 90%;
-    background-image: url("/challenge1-NFT-card/images/image-equilibrium.jpg");
-    background-size: 100% 100%;
+    background-image: url("/images/image-equilibrium.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 2vh;
@@ -74,6 +74,7 @@ body
     width: 90%;
     margin-top: 3vh;
     padding-left: 3vh;
+   
 }
 
 #flex-container-price-days
@@ -173,7 +174,7 @@ body
     }
 }
 
-@media (max-width: 1200px) and (min-width: 600px)
+@media (max-width: 900px) and (min-width: 600px)
 {
     #card
     {
@@ -188,4 +189,19 @@ body
         padding: 0%;
     }
 }
+
+@media (max-width: 1400px) and (min-width: 900px)
+{
+    #card
+    {
+        background:  hsl(216, 50%, 16%);
+        width: 30%;
+        height: 70%;
+        border-radius: 2vw;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0%;
+    }
 }
