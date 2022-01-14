@@ -60,13 +60,22 @@ body
     border-radius: 2vh;
     margin-top: 0em;
     align-self: center;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
 }
 
 #card-img-overlap
 {
-    position: absolute;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#eye-image
+{
     align-self: center;
 }
 
@@ -141,8 +150,8 @@ body
     margin-right: 0vw;
     border: 2px solid white;
     border-radius: 50%;
-    width: 2.5vw;    
-    height: 2.5vw;
+    width: 15%;    
+    height: auto;
     align-self: center;
 }
 
