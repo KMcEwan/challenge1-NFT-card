@@ -33,7 +33,7 @@ body
     padding: 0%;
     box-shadow: 3px 3px 10px black; 
 }
-#card-main-image
+#card-main-image-background
 {
     width: 90%;
     height: 90%;
@@ -45,6 +45,9 @@ body
     margin-top: 1em;
     align-self: center;
     opacity: 1;
+    position: relative;
+    display: block;
+    /* overflow: hidden; */
 }
 #main-image
 {
@@ -58,6 +61,13 @@ body
     margin-top: 0em;
     align-self: center;
     opacity: 1;
+    position: absolute;
+}
+
+#card-img-overlap
+{
+    position: absolute;
+    align-self: center;
 }
 
 #main-image:hover 
